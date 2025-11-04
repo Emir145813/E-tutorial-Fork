@@ -1,0 +1,221 @@
+{
+  "courses" : [
+    {
+      "id" : 1,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Lable",
+          "mount" : 100
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#EBEBFF]",
+          "accent" : "#564FFD",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Business",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#E1F7E3]",
+          "accent" : "#23BD33",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Finance & Accounting",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFF2E5]",
+          "accent" : "#FD8E1F",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+
+    {
+      "id" : 4,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "IT & Software",
+          "mount" : 100
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFF0F0]",
+          "accent" : "#E34444",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Personal Development",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFF2E5]",
+          "accent" : "#E34444",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 6,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Office Productivity",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#F5F7FA]",
+          "accent" : "#1D2026",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 7,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Marketing",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#EBEBFF]",
+          "accent" : "#564FFD",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 8,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Photography & Video",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#F5F7FA]",
+          "accent" : "#1D2026",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 9,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Lifestyle",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFF2E5]",
+          "accent" : "#FD8E1F",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 10,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Design",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFEEE8]",
+          "accent" : "#FF6636",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 11,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Health & Fitness",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#E1F7E3]",
+          "accent" : "#23BD33",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    },
+    {
+      "id" : 12,
+      "info" :[
+        {
+          "id" : 1,
+          "title" : "Music",
+          "mount" : 25
+        }
+      ],
+      "appearance" :[
+        {
+          "id" : 1,
+          "bg" : "bg-[#FFF2E5]",
+          "accent" : "#FD8E1F",
+          "icon" : "solar:cpu-linear"
+        }
+      ]
+    }
+  ]
+}
