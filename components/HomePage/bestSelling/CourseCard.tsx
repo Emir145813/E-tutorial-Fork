@@ -1,8 +1,10 @@
+import { ICourse } from '@/components/interfaces'
 import CourseField from '@/components/ui/CourseField'
 import { Icon } from '@iconify/react'
 import React from 'react'
 
-function CourseCard() {
+function CourseCard({title,category,prise,tumbnail,raiating,students} : ICourse) {
+
   return (
     <div className=' bg-white flex flex-col items-center justify-start gap-3.5'>
       <div className='h-[183px] w-[244px]'>
@@ -12,7 +14,7 @@ function CourseCard() {
         <div>
           <div className='flex justify-between items-center'>
             <span>
-              <CourseField fieldName='design' bgColor="bg-[#FFEEE8]" textColor='text-[#993D20]'/>
+              <CourseField fieldName={category} bgColor="bg-[#FFEEE8]" textColor='text-[#993D20]'/>
             </span>
             <span className='text-[#FF6636] font-semibold text-4 leading-[22px]'>
               ${19.99}
@@ -21,7 +23,7 @@ function CourseCard() {
         </div>
         <div>
           <p className='text-[14px] text-[#1D2026] leading-5 font-medium -tracking-[1] w-[216px] h-10 line-clamp-2'>
-            Machine Learning A-Z™: Hands-On Python & R In Data ...
+            {title}
           </p>
         </div>
       </div>  
@@ -32,7 +34,7 @@ function CourseCard() {
             <Icon width={16} height={16} color='#FD8E1F' icon="solar:star-bold"/>
           </span>
           <span className='text-[14px] text-[#4E5566] leading-5 font-medium'> 
-            5.0
+            {raiating}
           </span>
         </div>
         <div className='text-[14px] -translate-[1] flex justify-center items-center'>
@@ -40,7 +42,7 @@ function CourseCard() {
             265.7K
           </span>
           <span className='text-[#8C94A3] leading-[22px] pl-1'>
-            students
+            {students}
           </span>
         </div>
       </div>

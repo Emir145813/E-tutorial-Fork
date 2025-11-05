@@ -27,3 +27,13 @@ export interface ICourseField {
   bgColor ?: string,
   textColor ?: string
 }
+
+export interface ICourse {
+  id ?: number,
+  title ?: string,
+  category ?: string,
+  prise ?: number,
+  tumbnail ?: string,
+  raiating ?: number,
+  students ?: number
+}

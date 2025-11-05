@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react'
 
 async function Category() {
 
-  const result = await fetch("http://localhost:4000/courses")
+  const result = await fetch("http://localhost:4000/topCategory")
   const cources = await result.json()
   console.log(cources);
   
