@@ -1,8 +1,8 @@
 import React from 'react'
 import CategoryItem from './categoryCard'
 import { log } from 'console'
-import { ICatItem } from '../interfaces'
-import SegmentHeader from '../SegmentHeader'
+import { ICatItem } from '../../interfaces'
+import SegmentHeader from '../../SegmentHeader'
 import { Icon } from '@iconify/react'
 
 async function Category() {
@@ -14,7 +14,7 @@ async function Category() {
 
   return (
     <div className='flex flex-col justify-center items-center gap-y-10 py-20'>
-      <div className='text-[40px] text-[#1D2026] font-semibold leading-12'>
+      <div>
         <SegmentHeader>
           Browse top category
         </SegmentHeader>

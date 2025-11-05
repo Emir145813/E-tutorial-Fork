@@ -21,3 +21,9 @@ export interface ICourceAppearance {
   accent : string,
   icon : string
 }
+
+export interface ICourseField {
+  fieldName ?: string,
+  bgColor ?: string,
+  textColor ?: string
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon } from "@iconify/react";
-import { ICatItem } from '../interfaces';
+import { ICatItem } from '../../interfaces';
 
 function CategoryItem({info , appearance} : ICatItem) {
 
