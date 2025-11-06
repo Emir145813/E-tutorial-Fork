@@ -5,7 +5,7 @@ import { ICourse } from '@/components/interfaces';
 
 async function BestSellingCourse() {
 
-  const result = await fetch('http://localhost:4001/courses');
+  const result = await fetch('http://localhost:4000/courses');
   const courseData = await result.json();
 
   return (
@@ -15,10 +15,10 @@ async function BestSellingCourse() {
           Best Selling Courses
         </SegmentHeader>
       </div>
-      <div className='grid grid-cols-5 gap-[25px]'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[25px]'>
         {
-          courseData && courseData.map((item : ICourse) => (
-            <CourseCard key={item.id} title={item.title} prise={item.prise} raiating={item.raiating} tumbnail={item.tumbnail} students={item.students} category={item.category}/>
+          courseData && courseData.map((course : ICourse) => (
+            <CourseCard key={course.id} course={course} />
           ))
         }
       </div>

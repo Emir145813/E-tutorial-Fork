@@ -217,5 +217,97 @@
         }
       ]
     }
+  ],
+  "courses" : [
+    {
+      "id" : 1,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.7",
+      "students" : 86
+    },
+    {
+      "id" : 2,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "2.7",
+      "students" : 45
+    },
+    {
+      "id" : 3,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.5",
+      "students" : 42
+    },
+    {
+      "id" : 4,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.7",
+      "students" : 6374
+    },
+    {
+      "id" : 5,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "5.0",
+      "students" : 85
+    },
+    {
+      "id" : 6,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.7",
+      "students" : 53
+    },
+    {
+      "id" : 7,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "3.7",
+      "students" : 85
+    },
+    {
+      "id" : 8,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.0",
+      "students" : 9845
+    },
+    {
+      "id" : 9,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "4.7",
+      "students" : 412
+    },
+    {
+      "id" : 10,
+      "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
+      "category" : "Development",
+      "prise" : 10.99,
+      "thumbnail" : "/Courses/CourseImage.png",
+      "raiating" : "5.0",
+      "students" : 553
+    }
   ]
 }
