@@ -12,7 +12,7 @@ function CourseCard({course} : ICourseList) {
   
 
   return (
-    <div className=' bg-white flex flex-col items-center justify-start gap-3.5'>
+    <div className=' bg-white flex flex-col items-center justify-start gap-3.5 '>
       <div className='h-[183px] w-[244px]'>
         <Image
           src={course.thumbnail || "/Courses/CourseImage.png"}

@@ -1,4 +1,4 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
+
 
 export interface IChildren {
   children : React.ReactNode
@@ -35,11 +35,21 @@ export interface ICourse {
   title ?: string,
   category ?: string,
   prise ?: number,
+  discount ?: number,
   thumbnail ?: string,
   raiating ?: string,
   students ?: number
+  level ?: string,
+  courseTime ?: number,
+  teacher : string,
+  veiwerMount : number
 }
 
 export interface ICourseList {
   course : ICourse
+}
+
+export type IDiscountCalculator = {
+  prise : number | undefined ;
+  discount : number | undefined ;
 }

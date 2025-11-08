@@ -222,92 +222,142 @@
     {
       "id" : 1,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
-      "category" : "Development",
-      "prise" : 10.99,
+      "category" : "Art",
+      "prise" : 500,
+
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.7",
-      "students" : 86
+      "students" : 86,
+      "level": "Advanced",
+      "courseTime" : 24,
+      "teacher" : "Pashmak",
+      "veiwerMount" : 12
     },
     {
       "id" : 2,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
-      "prise" : 10.99,
+      "prise" : 40,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "2.7",
-      "students" : 45
+      "students" : 45,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Emir",
+      "veiwerMount" : 785
     },
     {
       "id" : 3,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
-      "category" : "Development",
-      "prise" : 10.99,
+      "category" : "Health & Care",
+      "prise" : 20,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.5",
-      "students" : 42
+      "students" : 42,
+      "level": "Advanced",
+      "courseTime" : 24,
+      "teacher" : "Mammad",
+      "veiwerMount" : 8
     },
     {
       "id" : 4,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
-      "category" : "Development",
-      "prise" : 10.99,
+      "category" : "Motion Graphy",
+      "prise" : 10,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.7",
-      "students" : 6374
+      "students" : 6374,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Ali",
+      "veiwerMount" : 785
     },
     {
       "id" : 5,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
-      "prise" : 10.99,
+      "prise" : 755,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "5.0",
-      "students" : 85
+      "students" : 85,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Mamali",
+      "veiwerMount" : 7
     },
     {
       "id" : 6,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
-      "prise" : 10.99,
+      "prise" : 100,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.7",
-      "students" : 53
+      "students" : 53,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Emir",
+      "veiwerMount" : 8
     },
     {
       "id" : 7,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
-      "prise" : 10.99,
+      "prise" : 10,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "3.7",
-      "students" : 85
+      "students" : 85,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Ali",
+      "veiwerMount" : 6
     },
     {
       "id" : 8,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
       "prise" : 10.99,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.0",
-      "students" : 9845
+      "students" : 9845,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Sarah",
+      "veiwerMount" : 8896
     },
     {
       "id" : 9,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
       "prise" : 10.99,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "4.7",
-      "students" : 412
+      "students" : 412,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "Peshi",
+      "veiwerMount" : 8
     },
     {
       "id" : 10,
       "title" : "2021 Complete Python Bootcamp From Zero to Hero...",
       "category" : "Development",
       "prise" : 10.99,
+      "discount" : 5,
       "thumbnail" : "/Courses/CourseImage.png",
       "raiating" : "5.0",
-      "students" : 553
+      "students" : 553,
+      "level": "Beginner",
+      "courseTime" : 24,
+      "teacher" : "",
+      "veiwerMount" : 5
     }
   ]
 }

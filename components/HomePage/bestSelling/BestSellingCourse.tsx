@@ -9,7 +9,7 @@ async function BestSellingCourse() {
   const courseData = await result.json();
 
   return (
-    <div className='bg-[#F5F7FA] flex flex-col items-center justify-center p-20 gap-10'>
+    <div className='bg-[#F5F7FA] flex flex-col items-center justify-center pt-20 pb-80 gap-10 '>
       <div>
         <SegmentHeader>
           Best Selling Courses
