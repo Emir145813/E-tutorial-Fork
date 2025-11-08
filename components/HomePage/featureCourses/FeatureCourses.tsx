@@ -5,7 +5,8 @@ import { ICourceInfo, ICourse } from '@/components/interfaces'
 
 async function FeatureCourses() {
 
-  const result = await fetch("http://localhost:4000/courses?_page=1&_per_page=4")
+  // const result = await fetch("http://localhost:4000/courses?_page=1&_per_page=4")
+  const result = await fetch("http://localhost:4000/courses?_start=0&_end=4")
   const courseData = await result.json()
   const courseArray = courseData.data
 
@@ -26,7 +27,7 @@ async function FeatureCourses() {
         </div>
         <div className='w-[1320px] h-[402px] grid grid-cols-1 md:grid-cols-2 gap-6'>
           {
-            courseArray.map((course : ICourse) => (
+            courseData.map((course : ICourse) => (
               <FeatureCourseCard key={course.id} course={course}/>
             ))
           }

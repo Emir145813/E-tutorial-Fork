@@ -1,13 +1,10 @@
-import { ICourse, ICourseList } from '@/components/interfaces'
+import { ICourseList } from '@/components/interfaces'
 import CourseField from '@/components/ui/CourseField'
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
 import React from 'react'
 
-
-
-function CourseCard({course} : ICourseList) {
-
+function RecentCourseCard({course} : ICourseList) {
   return (
     <div className=' bg-white flex flex-col items-center justify-start gap-3.5 '>
       <div className='h-[183px] w-[244px]'>
@@ -30,7 +27,7 @@ function CourseCard({course} : ICourseList) {
           </div>
         </div>
         <div>
-          <p className='text-[14px] text-[#1D2026] leading-5 font-medium -tracking-[1] w-[216px] h-10 line-clamp-2'>
+          <p className='text-[16px] text-[#1D2026] leading-[22px] font-medium w-[276px] h-10 line-clamp-2'>
             {course.title}
           </p>
         </div>
@@ -58,4 +55,4 @@ function CourseCard({course} : ICourseList) {
   )
 }
 
-export default CourseCard
+export default RecentCourseCard

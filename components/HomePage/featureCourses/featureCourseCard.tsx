@@ -1,4 +1,4 @@
-import { ICourse, ICourseList, IDiscountCalculator } from '@/components/interfaces'
+import { ICourseList } from '@/components/interfaces'
 import CourseField from '@/components/ui/CourseField'
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
