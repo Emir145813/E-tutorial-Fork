@@ -16,19 +16,19 @@ async function RecentCourse() {
   const courses = await result.json();
 
   return (
-    <div className=' bg-amber-500 flex items-center flex-col py-20 gap-10'>
+    <div className='flex items-center flex-col py-20 gap-10'>
       <SegmentHeader>
         Recently added courses
       </SegmentHeader>
-      <div className='grid grid-cols-4 gap-6'>
+      <div className='grid grid-cols-4 gap-6 relative'>
         {
           courses.map((course : ICourse)=> (
-          <HoverCard>
-            <HoverCardTrigger>
-              <RecentCourseCard key={course.id} course={course}/>
+          <HoverCard key={course.id}>
+            <HoverCardTrigger asChild>
+              <RecentCourseCard  course={course}/>
             </HoverCardTrigger>
-            <HoverCardContent>
-              <RecentCourseCardHower key={course.id} course={course}/>
+            <HoverCardContent side="right">
+              <RecentCourseCardHower course={course}/>
             </HoverCardContent>
           </HoverCard>
           ))

@@ -4,6 +4,7 @@ import Category from "../components/HomePage/category/category";
 import BestSellingCourse from "@/components/HomePage/bestSelling/BestSellingCourse";
 import FeatureCourses from "@/components/HomePage/featureCourses/FeatureCourses";
 import RecentCourse from "@/components/HomePage/recentCourse/RecentCourse";
+import BeInstractor from "@/components/HomePage/become instructor/BeInstractor";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <BestSellingCourse/>
       <FeatureCourses/>
       <RecentCourse/>
+      <BeInstractor/>
     </>
   );
 }

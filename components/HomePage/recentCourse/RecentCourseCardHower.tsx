@@ -3,6 +3,7 @@ import CourseField from '@/components/ui/CourseField'
 import TintedButton from '@/components/ui/tintedButton'
 import { Icon } from '@iconify/react'
 import React from 'react'
+import CourseGoals from './CourseGoals'
 
 function RecentCourseCardHower(prop : ICourseList) {
 
@@ -15,27 +16,27 @@ function RecentCourseCardHower(prop : ICourseList) {
   }
 
   return (
-    <div className='w-[424px] h-[670px] flex flex-col gap-10 border border-gray-100 bg-white'>
+    <div className='w-[424px] flex flex-col border border-gray-100 bg-white pb-[42px] shadow-[0px_7px_20px_0px_#1D20261F]'>
       <div className='flex flex-col gap-4 border-b border-gray-100 py-5'>
         <div className='mx-5 flex flex-col justify-start items-start gap-2.5'>
           <span>
             <CourseField fieldName='Development'/>
           </span>
           <p className='text-[18px] text-[#1D2026] leading-6 font-medium'>
-            2021 Complete Python Bootcamp From Zero to Hero in Python
+            {prop.course.title}
           </p>
         </div>
         <div className='w-[424px] h-12 px-5 flex justify-between items-center'>
           <div className='flex flex-row gap-3'>
             <div className='h-12 w-12 rounded-4xl bg-amber-300' >
-
+              
             </div>
             <div className='flex flex-col justify-center items-start'>
               <span className='text-[14px] text-[#8C94A3] leading-[22px] -tracking-px'>
                 Course By
               </span>
               <span className='text-[14px] text-[#1D2026] leading-[22px] -tracking-px'>
-                Kevin Gilbert
+                {prop.course.teacher}
               </span>
             </div>
           </div>
@@ -44,10 +45,10 @@ function RecentCourseCardHower(prop : ICourseList) {
             <Icon width={20} height={20} color='#FD8E1F' icon="solar:star-bold"/>
             <div className='-tracking-px flex justify-center items-center gap-[5px]'>
               <span className='font-medium text-gray-900 text-[16px] leading-5'>
-                5.0
+                {prop.course.raiating}
               </span>
               <span className='text-gray-600 text-[14px] -tracking-px leading-[22px]'>
-                45278
+                ({prop.course.veiwerMount})
               </span>
             </div>
           </div>
@@ -58,7 +59,7 @@ function RecentCourseCardHower(prop : ICourseList) {
             <Icon icon="solar:user-bold" width={20} height={20} color='#564FFD'/>
             <div className='flex justify-center items-center text-[14px] gap-1'>
               <span className='font-semibold text-[14px] text-gray-700 leading-[22px] -tracking-px'>
-                42542
+                {prop.course.students}
               </span>
               <span className='leading-[22px] text-[14px] text-gray-700 -tracking-px'>
                 students
@@ -68,13 +69,13 @@ function RecentCourseCardHower(prop : ICourseList) {
           <div className='flex gap-1'>
             <Icon icon="solar:chart-square-outline" width={20} height={20} color='#E34444'/>
             <span className='text-[14px] leading-[22px] -tracking-px text-gray-700'>
-              Beginner
+              {prop.course.level}
             </span>
           </div>
           <div className='flex gap-1'>
             <Icon icon="solar:clock-circle-outline" width={20} height={20} color='#23BD33'/>
             <span className='leading-[22px] text-[14px] text-gray-700 -tracking-px'>
-              5 hour
+              {prop.course.courseTime} hour
             </span>
           </div>
         </div>
@@ -100,6 +101,29 @@ function RecentCourseCardHower(prop : ICourseList) {
             <Icon icon="solar:heart-angle-outline" width={24} height={24} color='#FF6636'/>
           </div>
         </div>
+      </div>
+      <div className='flex flex-col justify-between items-start gap-2 p-5 border-b border-gray-100'>
+        <span className='text-3 text-gray-900 leading-3 font-medium'>
+          What you’ll learn
+        </span>
+        <CourseGoals/>   
+        <CourseGoals/>  
+        <CourseGoals/> 
+      </div>
+      <div className='flex flex-col justify-center items-center gap-3'>
+        <button className=' w-[379px] bg-[#FF6636] flex flex-row-reverse justify-center items-center gap-3 px-6'>
+          <span className='text-white font-semibold text-[16px] leading-12'>
+            Add To Cart
+          </span>
+          <span>
+            <Icon icon="solar:cart-large-2-linear" width={24} height={24} color='#FFFFFF'/>
+          </span>
+        </button>
+        <button className=' w-[379px] bg-[#FFEEE8] flex flex-row-reverse justify-center items-center gap-3 px-6'>
+          <span className='text-[#FF6636] font-semibold text-[16px] leading-12'>
+            Add To Cart
+          </span>
+        </button>
       </div>
     </div>
   )
