@@ -359,5 +359,47 @@
       "teacher" : "",
       "veiwerMount" : 5
     }
+  ],
+  "instructors" : [
+    {
+      "id" : 1,
+      "thumbnail" : "/Instructors/Instructor-1.jpg",
+      "name" : "Devon Lane",
+      "skill" : "Senior Developer",
+      "raiting" : 5.0,
+      "studends" : 654
+    },
+    {
+      "id" : 2,
+      "thumbnail" : "/Instructors/Instructor-2.jpg",
+      "name" : "Darrell Steward",
+      "skill" : "Digital Product Designer",
+      "raiting" : 4.9,
+      "studends" : 451
+    },
+    {
+      "id" : 3,
+      "thumbnail" : "/Instructors/Instructor-3.jpg",
+      "name" : "Jane Cooper",
+      "skill" : "UI/UX Designer",
+      "raiting" : 4.8,
+      "studends" : 632
+    },
+    {
+      "id" : 4,
+      "thumbnail" : "/Instructors/Instructor-4.jpg",
+      "name" : "Albert Flores",
+      "skill" : "Adobe Instructor",
+      "raiting" : 4.7,
+      "studends" : 985
+    },
+    {
+      "id" : 5,
+      "thumbnail" : "/Instructors/Instructor-5.jpg",
+      "name" : "Kathryn Murphy",
+      "skill" : "Lead Developer",
+      "raiting" : 4.2,
+      "studends" : 422
+    }
   ]
 }

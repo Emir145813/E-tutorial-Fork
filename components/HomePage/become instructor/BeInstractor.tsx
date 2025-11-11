@@ -39,7 +39,7 @@ function BeInstractor() {
 
 
   return (
-    <div className='bg-gray-50 pt-[80.5px] pb-[320px]'>
+    <div className='bg-gray-50 pt-[80.5px] pb-80'>
       <div className='flex justify-center items-center gap-6'>
         <div className='bg-linear-to-r from-orange-600 to-orange-500 relative flex flex-col justify-center items-start p-10 gap-6 w-[568px] h-[270px]'>
           <Image

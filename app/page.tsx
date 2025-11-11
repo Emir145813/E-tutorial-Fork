@@ -5,6 +5,8 @@ import BestSellingCourse from "@/components/HomePage/bestSelling/BestSellingCour
 import FeatureCourses from "@/components/HomePage/featureCourses/FeatureCourses";
 import RecentCourse from "@/components/HomePage/recentCourse/RecentCourse";
 import BeInstractor from "@/components/HomePage/become instructor/BeInstractor";
+import TopInstructors from "@/components/HomePage/top instractors/TopInstructors";
+import TrustedCompanies from "@/components/HomePage/trusted Companies/TrustedCompanies";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <FeatureCourses/>
       <RecentCourse/>
       <BeInstractor/>
+      <TopInstructors/>
+      <TrustedCompanies/>
     </>
   );
 }
