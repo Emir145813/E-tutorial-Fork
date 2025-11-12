@@ -4,6 +4,7 @@ import NavigationMenuItemList from './NavigationMenuItemList'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { Icon } from '@iconify/react'
 
 function BottomNavBar() {
   return (
@@ -34,7 +35,7 @@ function BottomNavBar() {
           </div>
         </div>
       </div>
-      <div className='w-[424px] h-12 flex justify-between items-center'>
+      <div className='w-[424px] h-12 flex justify-end items-center'>
         <div className='h-12 hidden items-center justify-start gap-6 sm:flex'>
           <Link href="/">
             <Image
@@ -62,12 +63,15 @@ function BottomNavBar() {
           </Link>
         </div>
         <div className='h-12 flex justify-between items-center gap-3 pl-2'>
-          <Button className='w-[168px] h-12 bg-orange-100 border-none hover:bg-orange-200 rounded-none text-orange-500 text-[16px]'>
+          <Button className='w-[168px] h-12 bg-orange-100 border-none hover:bg-orange-200 rounded-none text-orange-500 text-[16px] hidden sm:block'>
             Create Account
           </Button>
-          <Button className='w-[100px] h-12 bg-orange-500 border-none hover:bg-orange-600 rounded-none text-white text-[16px]'>
+          <Button className='w-[100px] h-12 bg-orange-500 border-none hover:bg-orange-600 rounded-none text-white text-[16px] hidden sm:block'>
             Sign In
           </Button>
+          <Link href="/signin">
+            <Icon className='block sm:hidden' icon="solar:user-broken" width={24} height={24} color="#1D2026"/>
+          </Link>
         </div>
       </div>
     </div>

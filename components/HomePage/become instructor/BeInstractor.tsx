@@ -40,14 +40,14 @@ function BeInstractor() {
 
   return (
     <div className='bg-gray-50 pt-[80.5px] pb-80'>
-      <div className='flex justify-center items-center gap-6'>
-        <div className='bg-linear-to-r from-orange-600 to-orange-500 relative flex flex-col justify-center items-start p-10 gap-6 w-[568px] h-[270px]'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-6'>
+        <div className='bg-linear-to-r from-orange-600 to-orange-500 relative flex flex-col justify-center items-start p-10 gap-6 lg:w-[648px] h-[270px]'>
           <Image
             src="/Become Instracture/Become-an-Instructor.png"
             alt='Become Instructor'
             width={230}
             height={200}
-            className='absolute right-0 bottom-0'
+            className='absolute right-0 bottom-0 hidden lg:block'
             />
           <div className='flex flex-col gap-3 items-start'>
             <h1 className='text-white text-[32px] leading-10 -tracking-px font-semibold'>
@@ -61,11 +61,11 @@ function BeInstractor() {
             Start teaching
           </TintedButton>
         </div>
-        <div className='flex flex-col gap-[27px] p-10'>
+        <div className='flex flex-col gap-[27px] p-10 bg-white'>
           <p className='text-[32px] leading-10 -tracking-px font-semibold text-gray-900'>
             Your teaching & earning steps
           </p>
-          <div className='grid grid-cols-2 gap-5'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
             {
               learningStep.map((step)=>(
                 <div key={step.id} className='flex gap-4 items-center justify-start' >

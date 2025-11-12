@@ -20,14 +20,14 @@ async function RecentCourse() {
       <SegmentHeader>
         Recently added courses
       </SegmentHeader>
-      <div className='grid grid-cols-4 gap-6 relative'>
+      <div className='grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 relative'>
         {
           courses.map((course : ICourse)=> (
           <HoverCard key={course.id}>
-            <HoverCardTrigger asChild>
+            <HoverCardTrigger >
               <RecentCourseCard  course={course}/>
             </HoverCardTrigger>
-            <HoverCardContent side="right">
+            <HoverCardContent side='left'>
               <RecentCourseCardHower course={course}/>
             </HoverCardContent>
           </HoverCard>

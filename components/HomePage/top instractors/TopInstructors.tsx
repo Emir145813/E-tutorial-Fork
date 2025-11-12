@@ -15,7 +15,7 @@ async function TopInstructors() {
         <SegmentHeader>
           Top instructor of the month
         </SegmentHeader>
-        <div className='flex flex-row gap-[25px]'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[25px]'>
           {
             courses.map((instructor : IInstructor) => (
               <InstructorCard key={instructor.id} instructor={instructor}/>

@@ -6,10 +6,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className=' bg-gray-900'>
-      <div className='shadow-[0px_-1px_0px_0px_#363B4780] flex justify-center items-center gap-[136px] border-b border-[#363B4780] py-[100px]'>
-        <div className='flex flex-col gap-8'>
-          <h2 className='text-[40px] leading-12 -tracking-px w-[536px] font-semibold text-white' >
+    <div className=' bg-gray-900 px-2'>
+      <div className='shadow-[0px_-1px_0px_0px_#363B4780] flex flex-col lg:flex-row items-center lg:justify-center lg:items-center gap-[136px] border-b border-[#363B4780] py-[100px]'>
+        <div className='flex flex-col items-center text-center lg:text-start lg:justify-center lg:items-center gap-8'>
+          <h2 className='text-[30px] md:text-[40px] leading-12 -tracking-px lg:w-[536px] font-semibold text-white' >
             Start learning with 67.1k students around the world.
           </h2>
           <div className='text-[16px] leading-12 text-white flex gap-4 '>
@@ -21,7 +21,7 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className='flex gap-6 text-white'>
+        <div className='flex flex-col sm:flex-row gap-6 text-white'>
           <div className='flex flex-col gap-3 '>
             <h2 className='text-[40px] leading-12 -tracking-px'>
               6.3k
@@ -48,8 +48,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex justify-center items-center border-b border-[#363B4780] py-20'>
-        <div className='flex flex-row gap-6'>
+      <div className='flex flex-col lg:flex-row lg:justify-center lg:items-center border-b border-[#363B4780] py-20'>
+        <div className='flex flex-col lg:flex-row gap-6'>
           <div className='flex flex-col gap-[26px]'>
             <div className='flex flex-col gap-5'>
               <Image
@@ -58,7 +58,7 @@ function Footer() {
                 width={175.1999969482422}
                 height={46}
               />
-              <p className='w-[424px] font-[14px] leading-[22px] text-gray-500'>
+              <p className='font-[14px] leading-[22px] text-gray-500'>
                 Aliquam rhoncus ligula est, non pulvinar elit
                 convallis nec. Donec mattis odio at.
               </p>
@@ -83,7 +83,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className='flex flex-row gap-6'> 
+          <div className='flex flex-col md:flex-row gap-6'> 
             <span className='flex flex-col gap-6 w-[200px]'>
               <p className='text-[14px] font-medium text-white'>
                 Top 4 Category
@@ -145,7 +145,7 @@ function Footer() {
               <p className='text-[14px] font-medium text-white'>
                 Downlaod our app
               </p>
-              <div className='flex flex-col gap-3'>
+              <div className='flex justify-start items-start flex-col gap-3'>
                 <Link className='flex justify-center items-center gap-3.5 px-5 py-[13px] bg-[#363B4766]' href="/">
                   <Image
                     src="/Footer/apple.png"
@@ -183,11 +183,11 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='px-[300px] flex flex-row justify-between items-center py-6'>
+      <div className='mx-auto lg:mx-[300px] flex flex-col md:flex-row justify-between items-center py-6'>
         <p className='text-[#8C94A3] text-[14px] leading-[22px] -tracking-px'>
           © {new Date().getFullYear()} - Eduflex. Designed by <span className='text-white'>Templatecookie</span>. All rights reserved
         </p>
-        <div className='px-4 py-3 bg-gray-900 border border-gray-800'>
+        <div className='px-4 py-3 bg-gray-900 border border-gray-800 hidden xl:block'>
           <NativeSelect className='text-gray-500 border-none bg-gray-900'>
             <NativeSelectOption value="English">English</NativeSelectOption>
             <NativeSelectOption value="French">French</NativeSelectOption>

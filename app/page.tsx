@@ -1,4 +1,4 @@
-import HeroPage from "../components/HomePage/heropage/page";
+import HeroPage from "../components/HomePage/heropage/HeroPage";
 import Category from "../components/HomePage/category/category";
 import BestSellingCourse from "@/components/HomePage/bestSelling/BestSellingCourse";
 import FeatureCourses from "@/components/HomePage/featureCourses/FeatureCourses";
@@ -15,11 +15,11 @@ export default function Home() {
       <Category/>
       <BestSellingCourse/>
       <FeatureCourses/>
-      {/* <RecentCourse/>
+      <RecentCourse/>
       <BeInstractor/>
       <TopInstructors/>
       <TrustedCompanies/>
-      <Footer/> */}
+      <Footer/>
     </>
   );
 }
