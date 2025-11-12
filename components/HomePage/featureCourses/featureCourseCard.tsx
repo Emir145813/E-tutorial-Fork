@@ -16,7 +16,7 @@ function FeatureCourseCard(prop : ICourseList) {
 
 
   return (
-    <div className=' bg-white flex justify-center items-center border border-gray-100 '>
+    <div className=' flex flex-col sm:flex-row justify-center items-center border border-gray-100 bg-white'>
       <div className='w-[220px] h-[188px]'>
         <Image
           src={prop.course.thumbnail || "/Courses/CourseImage.png"}
@@ -26,7 +26,7 @@ function FeatureCourseCard(prop : ICourseList) {
         />
       </div>
       <div className='px-6 py-4 grid gap-y-[17px]'>
-        <div className='w-[428px] h-[54px] flex flex-col justify-center'>
+        <div className=' flex flex-col justify-center'>
           <div className='flex justify-between items-center'>
             <CourseField fieldName={prop.course.category}/>
             <div className='flex gap-1 leading-6 -tracking-[px]'>
@@ -48,7 +48,7 @@ function FeatureCourseCard(prop : ICourseList) {
             </p>
           </div>
         </div>
-        <div className='w-[428px] h-7 flex justify-between items-center'>
+        <div className='flex justify-between items-center'>
           <div className='flex items-center gap-x-3'>
             <div className='h-7 w-7 rounded-4xl bg-white'></div>
             <span className='text-[14px] text-gray-700 leading-[22px]'>{prop.course.teacher}</span>
@@ -66,8 +66,8 @@ function FeatureCourseCard(prop : ICourseList) {
           </div>
         </div>
         <hr />
-        <div className='w-[428px] h-[22px] flex gap-[49px]'>
-          <div className='flex justify-center items-center gap-1.5'>
+        <div className='flex flex-col sm:flex-row gap-[49px]'>
+          <div className='flex gap-1.5'>
             <Icon icon="solar:user-bold" width={20} height={20} color='#564FFD'/>
             <div className='flex justify-center items-center text-[14px] gap-1'>
               <span className='font-medium text-gray-700 leading-5'>

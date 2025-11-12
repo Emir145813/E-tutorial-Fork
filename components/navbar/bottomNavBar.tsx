@@ -8,9 +8,9 @@ import Link from 'next/link'
 function BottomNavBar() {
   return (
   <div>
-    <div className='h-24 flex justify-between items-center px-8'>
+    <div className='h-24 flex justify-between items-center px-2 sm:px-8'>
       <div className=' h-12 flex gap-[50px]'>
-        <div className='flex justify-center items-center'>
+        <div className='hidden justify-center items-center sm:flex'>
           <Image
             src="/NavBar/LOGO.png"
             alt='E-Tutor Logo'
@@ -35,7 +35,7 @@ function BottomNavBar() {
         </div>
       </div>
       <div className='w-[424px] h-12 flex justify-between items-center'>
-        <div className='h-12 flex items-center justify-start gap-6'>
+        <div className='h-12 hidden items-center justify-start gap-6 sm:flex'>
           <Link href="/">
             <Image
               src='/NavBar/Bell.png'
@@ -61,7 +61,7 @@ function BottomNavBar() {
             />
           </Link>
         </div>
-        <div className='h-12 flex justify-between items-center gap-3'>
+        <div className='h-12 flex justify-between items-center gap-3 pl-2'>
           <Button className='w-[168px] h-12 bg-orange-100 border-none hover:bg-orange-200 rounded-none text-orange-500 text-[16px]'>
             Create Account
           </Button>
