@@ -1,6 +1,5 @@
 import { ICourseList } from '@/components/interfaces'
 import CourseField from '@/components/ui/CourseField'
-import TintedButton from '@/components/ui/tintedButton'
 import { Icon } from '@iconify/react'
 import React from 'react'
 import CourseGoals from './CourseGoals'

@@ -1,20 +1,20 @@
 import React from 'react'
 import { Icon } from "@iconify/react";
-import { ICatItem } from '../../interfaces';
+import {ICategoryList } from '../../interfaces';
 
-function CategoryItem({info , appearance} : ICatItem) {
+function CategoryItem(course ?: ICategoryList) {
 
   return (
-    <div className={`w-[312px] h-[104px] flex items-center ${appearance[0].bg}`}>
+    <div className={`w-[312px] h-[104px] flex items-center ${course?.course.bg}`}>
         <div className='w-16 h-16 bg-white m-5 flex justify-center items-center'>
-          <Icon color={appearance[0].accent} className="w-8 h-8 " icon="solar:cpu-outline"/>
+          <Icon color={course?.course.accent} className="w-8 h-8 " icon={course?.course.icon || "streamline-freehand:information-desk-question-help"}/>
         </div>
         <div className='flex flex-col gap-y-2'>
           <div className='font-medium text-[#1D2026] text-[16px] leading-[22px]'>
-            {info[0].title}
+            {course?.course.title}
           </div>
           <div className='text-gray-600 text-[14px] leading-[22px]'>
-            {info[0].mount} Courses
+            {course?.course.mount} Courses
           </div>
         </div>
     </div>

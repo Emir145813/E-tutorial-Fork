@@ -1,17 +1,21 @@
 import React from 'react'
 import CategoryItem from './categoryCard'
-import { log } from 'console'
-import { ICatItem } from '../../interfaces'
 import SegmentHeader from '../../SegmentHeader'
 import { Icon } from '@iconify/react'
+import categoryModel from '@/lib/Models/categoryModel'
+import connectDB from '@/lib/db'
+import {ICourse} from '@/components/interfaces'
+
+
 
 async function Category() {
 
-  const result = await fetch("http://localhost:4000/topCategory")
-  const cources = await result.json()
-  console.log(cources);
+  await connectDB()
+  const courses : ICourse[] = JSON.parse(
+    JSON.stringify(await categoryModel.find())
+  );
+  console.log(courses);
   
-
   return (
     <div className='flex flex-col justify-center items-center gap-y-10 py-20'>
       <div>
@@ -21,8 +25,8 @@ async function Category() {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
         {
-          cources.map((item : ICatItem)=>(
-            <CategoryItem key={item.id} id={item.id} info={item.info} appearance={item.appearance}/>
+          courses.map((item)=>(
+            <CategoryItem key={item.title} course={item}/>
           ))
         }
       </div>

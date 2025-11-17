@@ -1,4 +1,4 @@
-import { ICourse, ICourseList } from '@/components/interfaces'
+import { ICategoryList, ICourse } from '@/components/interfaces'
 import CourseField from '@/components/ui/CourseField'
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-function CourseCard({course} : ICourseList) {
+function CourseCard({course} : ICategoryList) {
 
   return (
     <div className=' bg-white flex flex-col items-center justify-start gap-3.5 '>

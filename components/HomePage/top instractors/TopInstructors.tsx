@@ -1,13 +1,17 @@
 import SegmentHeader from '@/components/SegmentHeader'
 import React from 'react'
 import InstructorCard from './InstructorCard'
-import { ICourse, IInstructor } from '@/components/interfaces'
+import { IInstructor } from '@/components/interfaces'
 import { Icon } from '@iconify/react'
+import connectDB from '@/lib/db'
+import instructorModel from '@/lib/Models/instractorsModel'
 
 async function TopInstructors() {
 
-  const result = await fetch("http://localhost:4000/instructors")
-  const courses = await result.json()
+  await connectDB();
+  const instructor : IInstructor[] = JSON.parse(
+    JSON.stringify(await instructorModel.find().sort({raiting : -1}))
+  )
 
   return (
     <div className='flex flex-col items-center justify-center bg-white'>
@@ -17,8 +21,8 @@ async function TopInstructors() {
         </SegmentHeader>
         <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[25px]'>
           {
-            courses.map((instructor : IInstructor) => (
-              <InstructorCard key={instructor.id} instructor={instructor}/>
+            instructor.map((instructor : IInstructor) => (
+              <InstructorCard key={instructor.name} instructor={instructor}/>
             ))
           }
         </div>
